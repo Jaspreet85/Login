@@ -4,72 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:gravity="center"
+        >
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="135dp"
-            android:layout_marginTop="150dp"
             android:padding="10dp"
-            android:text="LOGIN"
+            android:text="@string/login_title"
             android:textColor="@color/purple_700"
-            android:textSize="30sp"
+            android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.299" />
+             />
 
         <EditText
+            android:id="@+id/etMail"
             android:layout_width="335dp"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="13dp"
-            android:hint="Enter email"
+            android:hint="@string/enter_email"
             android:padding="12dp"
-            android:textSize="28sp"
+            android:textColorHint="#78909C"
 
-            />
+            android:textSize="25sp"
+           />
 
         <EditText
+            android:id="@+id/etPassword"
             android:layout_width="335dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Password"
+            android:hint="@string/enter_password"
             android:padding="12dp"
-            android:textSize="28sp"
-
-            />
+            android:textColorHint="#78909C"
+            android:textSize="25sp"
+          />
 
         <TextView
-            android:layout_width="191dp"
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="180dp"
-            android:text="Forgot Password"
+            android:text="@string/forgot_password"
             android:textSize="20sp"
-            android:layout_marginVertical="8dp"
-        />
+            android:layout_marginVertical="10dp"
+            android:gravity="end"
+
+            />
         <Button
-            android:id="@+id/button"
-            android:layout_width="236dp"
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="70dp"
-            android:layout_marginVertical="20dp"
             android:background="@color/purple_700"
             android:padding="15dp"
-            android:text="Login"
+            android:text="@string/login"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="168dp"
-            tools:layout_editor_absoluteY="354dp" />
+             />
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
     </LinearLayout>
 
 
