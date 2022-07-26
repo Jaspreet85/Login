@@ -5,19 +5,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainScreenActivity">
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     >
     <TextView
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/login_successfully"
-        android:textSize="28sp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name"
+        android:textSize="18sp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_email"
+        android:textSize="20sp"
+        android:textStyle="bold"
 
         />
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_email"
+        android:textSize="18sp"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_phone_number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_phone_number"
+        android:textSize="18sp"
+        android:maxLength="10"
+        android:digits="0123456789"
+        android:inputType="phone"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/etConPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/how_you_want_to_be_addressed"
+    android:textStyle="bold"
+    android:textSize="20sp"/>
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbShe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/he"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rbHe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/she"
+            android:layout_marginHorizontal="15dp" />
+        <RadioButton
+            android:id="@+id/rbOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:layout_marginHorizontal="15dp" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/etOtherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/others" />
+
+    <Button
+        android:id="@+id/btnSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
 </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

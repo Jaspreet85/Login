@@ -7,7 +7,7 @@ import android.widget.*
 import androidx.core.widget.doOnTextChanged
 
 class MainActivity : AppCompatActivity() {
-    lateinit var etMail: EditText
+    lateinit var etName: EditText
     lateinit var etPassword: EditText
     lateinit var tvForgotPassword: TextView
     lateinit var btnLogin: Button
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        etMail = findViewById(R.id.etMail)
+        etName = findViewById(R.id.etName)
         etPassword = findViewById(R.id.etPassword)
         tvForgotPassword = findViewById(R.id.tvForgotPassword)
         btnLogin = findViewById(R.id.btnLogin)
@@ -32,12 +32,12 @@ class MainActivity : AppCompatActivity() {
             btnLogin.setOnClickListener {
                 System.out.println("Login Clicked")
 
-            var email = etMail.text.toString()
+            var name = etName.text.toString()
             var password = etPassword.text.toString()
-            System.out.println("email $email")
-            if(email.isNullOrEmpty()){
-                etMail.error = resources.getString(R.string.please_enter_email)
-                etMail.requestFocus()
+            System.out.println("name $name")
+            if(name.isNullOrEmpty()){
+                etName.error = resources.getString(R.string.please_enter_name)
+                etName.requestFocus()
 
              }
             else if (password.isNullOrEmpty()){
